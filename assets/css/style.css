@@ -213,7 +213,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e82c2;}
     text-transform: uppercase;
     line-height: 1.5;
 }
-.header-text h2 span {color: #6eb81f;}
+.header-text h2 span {color: #4e82c2;}
 .header-text p {
     color: #fff;
     font-size: 20px;
@@ -352,7 +352,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e82c2;}
 }
 .timeline-horizontal-border i {
     font-size:  10px;
-    color: #6eb81f;
+    color: #4e82c2;
     margin-right:  5px;
 }
 span.single-timeline-horizontal {
@@ -635,7 +635,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     position:absolute;
     height:100%;
     width:100%;
-    background:rgba(89,176,62,.5);
+    background:rgba(0, 84, 207, 0.3);
     display:flex;
     align-items:center;
     text-transform: uppercase;
