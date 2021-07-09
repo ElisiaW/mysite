@@ -986,20 +986,28 @@ $_POST["insert your message here"]. "From: an@email.address");
                   <form method="post" name="contact_form" action="form_handler.php">
                     <div class="row">
                       <div class="col-sm-6 col-xs-12">
-                        <input type="text" name="name">
+                        <div class="form-group">
+                          <input type="text" name="name">
+                        </div>
                       </div>
                       <div class="col-sm-6 col-xs-12">
-                        <input type="email" name="email">
+                        <div class="form-group">
+                          <input type="email" name="email">
+                        </div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-12">
-                        <input type="text" name="subject">
+                        <div class="form-group">
+                          <input type="text" name="subject">
+                        </div>
                       </div>
                     </div>
                       <div class="row">
                         <div class="col-sm-12">
-                          <textarea rows="8" name="message"></textarea>
+                          <div class="form-group">
+                            <textarea rows="8" name="message"></textarea>
+                          </div>
                         </div>
                       </div>
                     <div class="row">
