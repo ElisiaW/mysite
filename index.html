@@ -1,3 +1,15 @@
+<?php
+
+if($_POST["message"]) {
+
+mail("elisiawright234@gmail.com", "Here is the subject line",
+
+$_POST["insert your message here"]. "From: an@email.address");
+}
+
+?>
+
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -135,7 +147,7 @@
 						<div class="col-sm-6">
 							<div class="single-about-txt">
 								<h3>
-									I am an undergraduate scientist, researcher and software engineer.
+									I am a scientist, researcher and software engineer.
 								</h3>
 								<p>
 									As <b>one of the top 60 undergraduate researchers</b> in the United States, my interests involve <b>solving ecological problems</b> with <b>artificial intelligence</b>. My passion is helping to <b>find practical solutions for environmental challenges</b> through <b>computational sustainability</b>.
@@ -821,7 +833,7 @@
 		<!--profiles end -->
 
 		<!--portfolio start -->
-		<section id="portfolio" class="portfolio">
+		<!-- <section id="portfolio" class="portfolio">
 			<div class="portfolio-details">
 				<div class="section-heading text-center">
 					<h2>current work</h2>
@@ -838,17 +850,17 @@
 											<a href="assets/download/Bousson Forest.pdf" target="_blank">
 												Bousson Forest
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
+										</div>
+									</div>
 									<div class="item">
 										<img src="assets/images/portfolio/p2.jpg" alt="portfolio image"/>
 										<div class="isotope-overlay">
 											<a href="assets/download/Smock Riverwalk.pdf" target="_blank">
 												Smock Riverwalk
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
+										</div>
+									</div>
+								</div>
 
 								<div class="col-sm-4">
 									<div class="item">
@@ -857,9 +869,9 @@
 											<a href="assets/download/Water Quality Monitoring.pdf" target="_blank">
 												Water Quality Monitoring
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
+										</div>
+									</div>
+								</div>
 
 								<div class="col-sm-4">
 									<div class="item">
@@ -868,24 +880,23 @@
 											<a href="assets/download/scienceactivities.pdf" target="_blank">
 												Lesson Plans: Science
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
+										</div>
+									</div>
 									<div class="item">
 										<img src="assets/images/portfolio/p5.png" alt="portfolio image"/>
 										<div class="isotope-overlay">
 											<a href="assets/download/naturecrafting.pdf" target="_blank">
 												Lesson Plans: Crafting
 											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
-							</div><!-- /.row -->
-						</div><!--/.isotope-->
-					</div><!--/.gallery-content-->
-				</div><!--/.container-->
-			</div><!--/.portfolio-details-->
-
-		</section><!--/.portfolio-->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
 		<!--portfolio end -->
 
 		<!--clients start -->
@@ -971,41 +982,69 @@
 						<div class="col-md-offset-1 col-md-5 col-sm-6">
 							<div class="single-contact-box">
 								<div class="contact-form">
-									<form>
+
+                  <form method="post" name="contact_form" action="form_handler.php">
+                    <div class="row">
+                      <div class="col-sm-6 col-xs-12">
+                        <input type="text" name="name">
+                      </div>
+                      <div class="col-sm-6 col-xs-12">
+                        <input type="email" name="email">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <input type="text" name="subject">
+                      </div>
+                    </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <textarea rows="8" name="message"></textarea>
+                        </div>
+                      </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <input type="submit" value="Submit" onlick="alert('The contact form has been submitted.')">
+                      </div>
+                    </div>
+                  </form>
+
+                  <!-- <form>
 										<div class="row">
 											<div class="col-sm-6 col-xs-12">
 												<div class="form-group">
 												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
+												</div>
+											</div>
 											<div class="col-sm-6 col-xs-12">
 												<div class="form-group">
 													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
+												</div>
+											</div>
+										</div>
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="form-group">
 													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
+												</div>
+											</div>
+										</div>
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="form-group">
 													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
+												</div>
+											</div>
+										</div>
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="single-contact-btn">
 													<a class="contact-btn" href="#" role="button">submit</a>
-												</div><!--/.single-single-contact-btn-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-									</form><!--/form-->
+												</div>
+											</div>
+										</div>
+									</form> -->
+
 								</div><!--/.contact-form-->
 							</div><!--/.single-contact-box-->
 						</div><!--/.col-->
