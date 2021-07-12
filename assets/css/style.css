@@ -616,9 +616,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 /*.item img*/
 .isotope .item img{
-    width:50%;
+    width:100%;
     margin: 0;
-    height:50%;
+    height:100%;
     -webkit-transition: .5s;
     -moz-transition: .5s;
     -ms-transition: .5s;
@@ -636,8 +636,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*.isotope-overlay*/
 .isotope-overlay{
     position:absolute;
-    height:50%;
-    width:50%;
+    height:100%;
+    width:100%;
     background:rgba(0, 84, 207, 0.3);
     display:flex;
     align-items:center;
