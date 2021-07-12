@@ -610,7 +610,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     clear: both;
 }
 .isotope .item {
-    /* position:relative; */
+    position:relative;
     overflow:hidden;
     margin: 0;
 }
